@@ -8,7 +8,7 @@ import numpy as np
 
 # Load the data
 
-ratings = pd.read_csv("ratings.csv")
+ratings = pd.read_csv("ratings (1).csv")
 movies = pd.read_csv("movies.csv")
 
 # Filter to top 500 movies and top 1000 users
@@ -142,4 +142,5 @@ elif st.session_state.page == "results":
     if st.button("🔙 Back to Home"):
         st.session_state.page = "home"
         st.rerun()
+
 
